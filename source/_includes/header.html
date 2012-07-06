@@ -23,15 +23,21 @@
     <li> <a href="{{ root_url }}/">blog</a> </li>
   {% endif %}
 
+  {% if page.current == 'about' %}
+  <li><a href="{{ root_url }}/about" class="current">about</a></li>
+  {% else %}
+  <li><a href="{{ root_url }}/about">about</a></li>
+  {% endif %}
+
+  {% if page.current == 'talks' %}
+  <li><a href="{{ root_url }}/talks" class="current">talks</a></li>
+  {% else %}
+  <li><a href="{{ root_url }}/talks">talks</a></li>
+  {% endif %}
+
   {% if page.current == 'archives' %}
     <li><a href="{{ root_url }}/blog/archives" class="current">archives</a></li>
   {% else %}
     <li><a href="{{ root_url }}/blog/archives">archives</a></li>
-  {% endif %}
-
-  {% if page.current == 'galleries' %}
-  <li><a href="{{ root_url }}/{{ site.gallery_dir }}" class="current">galleries</a></li>
-  {% else %}
-  <li><a href="{{ root_url }}/{{ site.gallery_dir }}">galleries</a></li>
   {% endif %}
 </ul>
