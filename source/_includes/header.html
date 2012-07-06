@@ -6,13 +6,13 @@
 </div>
 <ul id="social-links">
   {% if site.subscribe_rss %}
-    <li><a class="feed" href="{{ site.subscribe_rss }}" title="RSS">RSS</a></li>
+    <li><a target="_blank" class="feed" href="{{ site.subscribe_rss }}" title="RSS">RSS</a></li>
   {% endif %}
   {% if site.twitter_user %}
-    <li><a class="twitter" href="https://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a></li>
+    <li><a target="_blank" class="twitter" href="https://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a></li>
   {% endif %}
   {% if site.github_user %}
-    <li> <a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a> </li>
+    <li> <a target="_blank" class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a> </li>
   {% endif %}
 </ul>
 <div class="clear"></div>
