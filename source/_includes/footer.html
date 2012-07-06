@@ -28,6 +28,24 @@
   </div>
 
   <p class="powered">
-    Powered by <a href="http://octopress.org">Octopress</a>. Theme based on <a href="https://github.com/iwinux/compbits">Compbits</a>
+    Powered by <a href="http://octopress.org">Octopress</a>. Theme based
+    on <a href="https://github.com/iwinux/compbits">Compbits</a>
+{% if site.sc_project && site.sc_security %}
+<section>
+<script type="text/javascript">
+  var sc_project={{site.sc_project}};
+  var sc_invisible=1;
+  var sc_security="{{site.sc_security}}";
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+<noscript><div class="statcounter"><a title="tumblr
+analytics" href="http://statcounter.com/tumblr/"
+class="statcounter"><img class="statcounter"
+src="http://c.statcounter.com/{{sc_project}}/0/{{sc_security}}/0/"
+alt="tumblr analytics" /></a></div></noscript>
+</section>
+{% endif %}
+
   </p>
 </div>
